@@ -6,7 +6,7 @@ export default function Nav() {
     <nav className="w-64 h-screen p-6 bg-brand-dark text-brand-light flex flex-col space-y-6 fixed z-50">
       {/* Logo / Animated Symbol */}
       <Link to="/main" className="relative group w-20 h-20 mx-auto flex items-center justify-center">
-        <span className="absolute text-4xl font-bold text-brand-red transition-all duration-500 group-hover:scale-0 group-hover:rotate-12 group-hover:opacity-0 transform">
+        <span translate="no" lang="zxx" className="absolute text-4xl font-bold text-brand-red transition-all duration-500 group-hover:scale-0 group-hover:rotate-12 group-hover:opacity-0 transform">
           三
         </span>
         <span className="absolute text-base font-bold text-brand-light opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 transform group-hover:rotate-0 drop-shadow-md whitespace-nowrap">
