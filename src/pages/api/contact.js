@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend('re_HdLLxYna_85vEWQvXtZscQZ2BhZk6cx1E');
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
