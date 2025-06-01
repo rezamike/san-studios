@@ -62,20 +62,20 @@ export default function Services() {
                   {tier.title}
                 </span>
               </h3>
-              <p className="text-brand-gray italic">{tier.subtitle}</p>
+              <p className="text-brand-gray italic max-w-[22ch] sm:max-w-none">{tier.subtitle}</p>
               <ul className="text-brand-gray list-disc pl-5 space-y-1">
                 {tier.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <p className="text-brand-red font-semibold mt-2">{tier.price}</p>
+              <p className="text-brand-red font-semibold mt-2 sm:mt-4">{tier.price}</p>
             </div>
           ))}
         </div>
 
         <div className="pt-8 border-t border-brand-border space-y-4">
           <h4 className="text-3xl sm:text-4xl font-extrabold text-brand-light lowercase tracking-tight leading-tight mb-2">Add-ons (a la carte)</h4>
-          <ul className="text-brand-gray list-disc pl-5 space-y-1">
+          <ul className="text-brand-gray list-disc pl-5 space-y-1 max-w-[24ch] sm:max-w-none">
             <li>Portfolio/Case Study template buildout</li>
             <li>Light editing for video/hero reels</li>
             <li>UX review + rewrite for existing sites</li>

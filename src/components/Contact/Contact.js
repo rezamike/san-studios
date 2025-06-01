@@ -4,7 +4,7 @@ export default function Contact() {
   const [messageSent, setMessageSent] = useState(false);
 
   return (
-    <section className="max-w-4xl mx-auto px-8 py-16 space-y-8 text-brand-light">
+    <section className="max-w-6xl mx-auto px-4 sm:px-8 py-12 sm:py-16 space-y-8 text-brand-light">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-light lowercase tracking-tight leading-tight mb-2">
         Get in Touch
       </h1>
@@ -13,7 +13,7 @@ export default function Contact() {
         something meaningful together.
       </p>
       {messageSent ? (
-        <div className="text-brand-light text-lg font-medium">
+        <div className="text-brand-light text-lg font-medium mt-6 sm:mt-8">
           Thank you for reaching out. Your message has been sent successfully!
         </div>
       ) : (
@@ -106,7 +106,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="px-6 py-3 bg-brand-red text-brand-light font-semibold rounded hover:bg-red-700 transition"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 bg-brand-red text-brand-light font-semibold rounded hover:bg-red-700 transition"
           >
             Send Message
           </button>
