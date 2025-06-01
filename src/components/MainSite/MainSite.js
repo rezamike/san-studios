@@ -1,104 +1,109 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 export default function MainSite() {
   return (
-    <div className="flex h-screen overflow-hidden bg-[#0e0e0e] text-[#F5F5F5] font-sans">
-      {/* Sidebar */}
-      <nav className="w-1/5 min-w-[220px] bg-[#0e0e0e] p-6 hidden sm:block">
-        <h2 className="text-4xl font-bold mb-12 tracking-wide text-[#FF3C38] lowercase animate-pulse">
-          三
-        </h2>
-        <ul className="space-y-6 text-lg font-medium">
-          <li>
-            <a
-              href="#about"
-              className="hover:text-[#ff6f61] transition duration-300"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#work"
-              className="hover:text-[#ff6f61] transition duration-300"
-            >
-              Work
-            </a>
-          </li>
-          <li>
-            <a
-              href="#submit"
-              className="hover:text-[#ff6f61] transition duration-300"
-            >
-              Submit
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="hover:text-[#ff6f61] transition duration-300"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div className="flex min-h-screen flex-col bg-brand-dark text-brand-light font-sans">
 
-      {/* Main content */}
-      <main className="flex-1 p-16 overflow-y-auto bg-gradient-to-b from-[#0e0e0e] to-[#121212] text-[#F5F5F5]">
-        <section className="mb-24">
-          <div className="mb-4 animate-fadein">
-            <h2 className="text-6xl sm:text-8xl font-extrabold mb-6 tracking-tight leading-none lowercase animate-fadein">
-              san studios
-            </h2>
+      <section className="sticky top-0 z-50 bg-brand-dark py-6 px-8 border-b border-brand-border">
+        <div className="animate-fadein">
+          <div className="text-5xl font-extrabold tracking-tight leading-none lowercase text-brand-light">
+            san studios
           </div>
-          <p className="text-2xl text-[#ccc] max-w-3xl">
+          <p className="text-sm text-brand-gray mt-2 max-w-3xl">
             Where story meets design. We create digital experiences with soul.
           </p>
-        </section>
+        </div>
+      </section>
 
-        <section className="mb-24 text-xl text-[#ddd]">
-          <div className="animate-fadein delay-100 mb-6">
-            <p>
-              <strong>Cinematic video production</strong> — with heart and
-              intention.
-            </p>
-          </div>
-          <div className="animate-fadein delay-300 mb-6">
-            <p>
-              <strong>Story-driven websites & branding</strong> — built to
-              resonate.
-            </p>
-          </div>
-          <div className="animate-fadein delay-500">
-            <p>
-              <strong>Creative direction</strong> — without the fluff, only the
-              feels.
-            </p>
-          </div>
-        </section>
+      {/* Main content */}
+      <main className="flex-1 px-16 py-8 bg-brand-dark text-brand-light">
+        <div className="max-w-6xl mx-auto px-8 py-16 space-y-16">
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-24">
-          <img
-            src="https://images.unsplash.com/photo-1549921296-3a6b77d61c1c"
-            alt="cinematic"
-            className="rounded-lg soft-shadow object-cover aspect-video hover:scale-102 transition duration-1000 ease-out animate-fadein"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1603190287605-e6ade32fa852"
-            alt="studio"
-            className="rounded-lg soft-shadow object-cover aspect-video hover:scale-102 transition duration-1000 ease-out animate-fadein delay-200"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1581093588401-22d9cf99f3ac"
-            alt="creative"
-            className="rounded-lg soft-shadow object-cover aspect-video hover:scale-102 transition duration-1000 ease-out animate-fadein delay-400"
-          />
-        </section>
+          <section className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="md:w-1/2 space-y-4">
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-light lowercase tracking-tight leading-tight mb-2 relative group overflow-hidden">
+                <span className="inline-block relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 after:transition-all after:duration-300 group-hover:after:w-full">
+                  Cinematic video production
+                </span>
+              </h3>
+              <p className="text-md text-brand-gray leading-relaxed max-w-3xl mt-4">
+                Emotionally-driven visuals that bring your story to life. We produce cinematic content built for clarity and impact.
+              </p>
+            </div>
+            <div className="md:w-1/2 overflow-hidden rounded-lg">
+              <img
+                src="https://images.pexels.com/photos/3379940/pexels-photo-3379940.jpeg"
+                alt="cinematic"
+                className="rounded-lg object-cover aspect-video w-full transition-transform duration-1000 ease-out hover:scale-105"
+              />
+            </div>
+          </section>
 
-        <div className="floating-cta">
-          <p className="text-[#aaa] text-center">
-            More to come, quietly waiting…
+          <section className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="md:w-1/2 overflow-hidden rounded-lg">
+              <img
+                src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg"
+                alt="branding"
+                className="rounded-lg object-cover aspect-video w-full transition-transform duration-1000 ease-out hover:scale-105"
+              />
+            </div>
+            <div className="md:w-1/2 space-y-4">
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-light lowercase tracking-tight leading-tight mb-2 relative group overflow-hidden">
+                <span className="inline-block relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 after:transition-all after:duration-300 group-hover:after:w-full">
+                  Story-driven websites & branding
+                </span>
+              </h3>
+              <p className="text-md text-brand-gray leading-relaxed max-w-3xl mt-4">
+                We build brands that speak with clarity and confidence. Digital platforms that are not just seen, but remembered.
+              </p>
+            </div>
+          </section>
+
+          <section className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="md:w-1/2 space-y-4">
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-light lowercase tracking-tight leading-tight mb-2 relative group overflow-hidden">
+                <span className="inline-block relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 after:transition-all after:duration-300 group-hover:after:w-full">
+                  Creative direction
+                </span>
+              </h3>
+              <p className="text-md text-brand-gray leading-relaxed max-w-3xl mt-4">
+                From concept to execution, we shape visual narratives with depth and emotion. No fluff. All feels.
+              </p>
+            </div>
+            <div className="md:w-1/2 overflow-hidden rounded-lg">
+              <img
+                src="https://images.pexels.com/photos/3730210/pexels-photo-3730210.jpeg"
+                alt="creative"
+                className="rounded-lg object-cover aspect-video w-full transition-transform duration-1000 ease-out hover:scale-105"
+              />
+            </div>
+          </section>
+
+          <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12 border-t border-brand-border py-8">
+            <img
+              src="https://images.pexels.com/photos/2510425/pexels-photo-2510425.jpeg"
+              alt="cinematic"
+              className="rounded-lg soft-shadow object-cover aspect-video hover:scale-102 transition duration-1000 ease-out animate-fadein"
+            />
+            <img
+              src="https://images.pexels.com/photos/1391786/pexels-photo-1391786.jpeg"
+              alt="studio"
+              className="rounded-lg soft-shadow object-cover aspect-video hover:scale-102 transition duration-1000 ease-out animate-fadein delay-200"
+            />
+            <img
+              src="https://images.pexels.com/photos/6803529/pexels-photo-6803529.jpeg"
+              alt="creative"
+              className="rounded-lg soft-shadow object-cover aspect-video hover:scale-102 transition duration-1000 ease-out animate-fadein delay-400"
+            />
+          </section>
+
+        </div>
+
+        <div className="max-w-6xl mx-auto px-8 py-16 text-center">
+          <p className="text-brand-gray text-md leading-relaxed italic animate-fadein">
+            More to come — quietly waiting...
           </p>
         </div>
       </main>
